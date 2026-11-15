@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "It's my portfolio repository.",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-portfolio:matvejpovroznyk/portfolio.git"
+  },
+  "keywords": [],
+  "author": "Matvej Povroznyk",
+  "license": "ISC",
+  "type": "module",
+  "overrides": {
+    "@swc/core": "1.15.33"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "basiclightbox": "^5.0.4",
+    "handlebars": "^4.7.10"
+  }
+}
