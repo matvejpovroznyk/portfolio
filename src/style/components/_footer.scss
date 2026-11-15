@@ -7,8 +7,9 @@
 
   &::before {
     content: "";
-    @include size(100vh, 1px);
+    @include size(100vw, 1px);
     background-color: $color-border;
+
     position: absolute;
     top: 0;
     left: 50%;
