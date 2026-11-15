@@ -1,0 +1,11 @@
+.footer {
+  &__copyright {
+    font-size: 13px;
+  }
+
+  &__back-to-top {
+    font-size: 13px;
+    color: $color-accent;
+    font-weight: 500;
+  }
+}

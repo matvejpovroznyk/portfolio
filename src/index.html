@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matvej Povroznyk - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/main.scss" />
   </head>
   <body>
@@ -43,31 +49,31 @@
               <source
                 media="(min-width: 1536px)"
                 srcset="
-                  ./img/dark/avatar-placeholders/avatar-placeholder_1536@1x.png
+                  ./img/avatar-placeholders/avatar-placeholder_1536@1x.png
                 "
               />
               <source
                 media="(min-width: 1024px)"
                 srcset="
-                  ./img/dark/avatar-placeholders/avatar-placeholder_1024-1280@1x.png
+                  ./img/avatar-placeholders/avatar-placeholder_1024-1280@1x.png
                 "
               />
               <source
                 media="(min-width: 768px)"
                 srcset="
-                  ./img/dark/avatar-placeholders/avatar-placeholder_768@1x.png
+                  ./img/avatar-placeholders/avatar-placeholder_768@1x.png
                 "
               />
 
               <img
-                src="./img/dark/avatar-placeholders/avatar-placeholder_320@1x.png"
+                src="./img/avatar-placeholders/avatar-placeholder_320@1x.png"
                 alt="Avatar Placeholder"
               />
             </picture>
           </div>
           <div class="hero__text">
             <p class="hero__pre-title">Hi, I’m</p>
-            <p class="hero__title">Matvej Povroznyk</p>
+            <h1 class="hero__title">Matvej Povroznyk</h1>
             <p class="hero__subtitle">Frontend Developer</p>
             <p class="hero__desc">
               I build clean, user-friendly interfaces. Here you’ll find my
@@ -81,7 +87,7 @@
                 View projects
               </button>
               <button
-                class="hero__button hero__button-contact-me"
+                class="hero__button hero__button--contact-me"
                 type="button"
               >
                 Contact me
@@ -93,8 +99,8 @@
       <section class="about-me">
         <div class="container">
           <div class="about-me__text">
-            <p class="about-me__subtitle section-count">01</p>
-            <p class="about-me__title">About me</p>
+            <p class="about-me__pre-title section-count">01</p>
+            <h2 class="about-me__title">About me</h2>
           </div>
           <p class="about-me__desc">
             I’ve been learning frontend for about two years, and I enjoy every
@@ -129,7 +135,7 @@
         <div class="container">
           <div class="projects__text">
             <p class="projects__pre-title section-count">02</p>
-            <p class="projects__title">Projects</p>
+            <h2 class="projects__title">Projects</h2>
           </div>
           <ul class="projects__list">
             <li class="projects__list-item project">
@@ -139,35 +145,35 @@
                     <source
                       media="(min-width: 1536px)"
                       srcset="
-                        ./img/dark/project-preview-placeholders/project-preview-placeholder_1536@1x.png
+                        ./img/project-preview-placeholders/project-preview-placeholder_1536@1x.png
                       "
                     />
                     <source
                       media="(min-width: 1280px)"
                       srcset="
-                        ./img/dark/project-preview-placeholders/project-preview-placeholder_1280@1x.png
+                        ./img/project-preview-placeholders/project-preview-placeholder_1280@1x.png
                       "
                     />
                     <source
                       media="(min-width: 1024px)"
                       srcset="
-                        ./img/dark/project-preview-placeholders/project-preview-placeholder_1280@1x.png
+                        ./img/project-preview-placeholders/project-preview-placeholder_1280@1x.png
                       "
                     />
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./img/dark/project-preview-placeholders/project-preview-placeholder_768@1x.png
+                        ./img/project-preview-placeholders/project-preview-placeholder_768@1x.png
                       "
                     />
 
                     <img
-                      src="./img/dark/project-preview-placeholders/project-preview-placeholder_320@1x.png"
+                      src="./img/project-preview-placeholders/project-preview-placeholder_320@1x.png"
                       alt="Avatar Placeholder"
                     />
                   </picture>
                 </div>
-                <p class="project__title">Project Name 01</p>
+                <h3 class="project__title">Project Name 01</h3>
                 <p class="project__desc">
                   Short description: what the project does and what problem it
                   solves.
@@ -182,16 +188,20 @@
               </div>
             </li>
           </ul>
-          <button class="project__button">View all projects ➜</button>
+          <button class="projects__button">View all projects ➜</button>
         </div>
       </section>
       <section class="skills">
         <div class="container">
           <div class="skills__text">
             <p class="skills__pre-title section-count">03</p>
-            <p class="skills__title">Skills</p>
+            <h2 class="skills__title">Skills</h2>
           </div>
-          <ul class="skills__list"></ul>
+          <ul class="skills__list">
+            <li class="skills__item skill-js">
+                <p class="skill__name">JavaScript</p>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="contacts">

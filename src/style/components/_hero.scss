@@ -1,0 +1,37 @@
+.hero {
+  &__pre-title {
+    color: $color-accent;
+    font-weight: 500;
+  }
+
+  &__title {
+    color: $color-text;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  &__subtitle {
+    color: $color-text;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__desc {
+    color: $color-muted;
+    font-size: 16px;
+    line-height: 1.625;
+  }
+
+  &__button {
+    font-weight: 600;
+
+    &--view-projects {
+      color: $color-onaccent;
+    }
+
+    &--contact-me {
+      color: $color-text;
+    }
+  }
+}

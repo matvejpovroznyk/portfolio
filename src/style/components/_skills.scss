@@ -1,0 +1,14 @@
+.skills {
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+
+.skill__name {
+  color: $color-text;
+
+  &--muted {
+    color: $color-muted;
+  }
+}
