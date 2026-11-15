@@ -1,0 +1,39 @@
+.skills {
+  padding-top: 48px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    color: $color-text;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+.skill {
+  padding: 10px 16px;
+  background: #12151a;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+
+  &__name {
+    font-weight: 500;
+    color: $color-text;
+  }
+
+  &--muted &__name {
+    color: $color-muted;
+  }
+}

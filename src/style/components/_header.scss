@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 0;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    @include size(100vw, 1px);
+    background-color: $color-border;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 600;
+    color: $color-text;
+  }
+
+  &__menu-button {
+    svg {
+      @include size(16px, 14px);
+    }
+
+    padding: 10px 9px;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    background-color: $color-onaccent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
