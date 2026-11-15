@@ -1,14 +1,44 @@
 .projects {
-  &__title {
-    font-weight: 600;
-    font-size: 24px;
+  padding-top: 48px;
+
+  &__title,
+  .project__title {
     color: $color-text;
   }
 
-  &__button {
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &__link {
     font-weight: 600;
     font-size: 15px;
     color: $color-accent;
+  }
+
+  &__text,
+  &__list,
+  .project__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    gap: 32px;
+    margin-bottom: 32px;
+
+    &-item {
+      border: 1px solid $color-border;
+      border-radius: 12px;
+      background-color: #12151a;
+      padding: 20px;
+    }
   }
 }
 
@@ -16,22 +46,40 @@
   &__title {
     font-weight: 700;
     font-size: 18px;
-    color: $color-text;
+  }
+
+  &__desc,
+  &__technology {
+    color: $color-muted;
   }
 
   &__desc {
     line-height: 1.57;
-    color: $color-muted;
+  }
+
+  &__card {
+    gap: 16px;
+  }
+
+  &__technologies {
+    display: flex;
+    gap: 8px;
   }
 
   &__technology {
     font-weight: 500;
     font-size: 12px;
-    color: $color-muted;
+    padding: 4px 10px;
+    border: 1px solid $color-border;
+    border-radius: 999px;
   }
 
   &__button {
     font-weight: 600;
     color: $color-text;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 1px solid $color-border;
+    background: transparent;
   }
 }

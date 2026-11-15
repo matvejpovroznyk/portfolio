@@ -1,4 +1,9 @@
 .about-me {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
   &__title {
     font-weight: 600;
     font-size: 24px;
@@ -11,7 +16,28 @@
     color: $color-muted;
   }
 
+  &__text,
+  &__skills,
   &__skill-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    gap: 8px;
+  }
+
+  &__skills {
+    gap: 28px;
+  }
+
+  &__skill-card {
+    background: #12151a;
+    border-radius: 12px;
+    border: 1px solid $color-border;
+    padding: 20px;
+    gap: 4px;
+
     p:nth-child(1) {
       font-weight: 700;
       font-size: 28px;

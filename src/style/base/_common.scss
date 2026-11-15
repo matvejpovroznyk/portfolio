@@ -1,10 +1,12 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
+  background: $color-onaccent;
 }
 
 .section-count {
   font-weight: 500;
   font-size: 13px;
   letter-spacing: 8%;
+  color: $color-accent;
 }

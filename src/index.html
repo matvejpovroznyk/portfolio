@@ -31,15 +31,13 @@
         </symbol>
       </defs>
     </svg>
-    <header class="header">
-      <div class="container">
-        <p class="header__name">Matvej Povroznyk</p>
-        <button class="header__menu-button" type="button">
-          <svg style="color: #fff">
-            <use href="#icon-sidemenu"></use>
-          </svg>
-        </button>
-      </div>
+    <header class="container header">
+      <p class="header__name">Matvej Povroznyk</p>
+      <button class="header__menu-button" type="button">
+        <svg style="color: #fff">
+          <use href="#icon-sidemenu"></use>
+        </svg>
+      </button>
     </header>
     <main>
       <section class="hero">
@@ -60,9 +58,7 @@
               />
               <source
                 media="(min-width: 768px)"
-                srcset="
-                  ./img/avatar-placeholders/avatar-placeholder_768@1x.png
-                "
+                srcset="./img/avatar-placeholders/avatar-placeholder_768@1x.png"
               />
 
               <img
@@ -96,40 +92,38 @@
           </div>
         </div>
       </section>
-      <section class="about-me">
-        <div class="container">
-          <div class="about-me__text">
-            <p class="about-me__pre-title section-count">01</p>
-            <h2 class="about-me__title">About me</h2>
-          </div>
-          <p class="about-me__desc">
-            I’ve been learning frontend for about two years, and I enjoy every
-            part of it: responsive layouts, animations and interactivity,
-            JavaScript logic and making interfaces comfortable to use. I’m
-            looking for a job or internship and freelance projects — and this
-            site is also my personal portfolio.
-          </p>
-          <ul class="about-me__skills">
-            <li class="about-me__skill">
-              <div class="about-me__skill-card">
-                <p>2 years</p>
-                <p>learning frontend</p>
-              </div>
-            </li>
-            <li class="about-me__skill">
-              <div class="about-me__skill-card">
-                <p>Mobile First</p>
-                <p>approach</p>
-              </div>
-            </li>
-            <li class="about-me__skill">
-              <div class="about-me__skill-card">
-                <p>Open to work</p>
-                <p>intership & freelance/p></p>
-              </div>
-            </li>
-          </ul>
+      <section class="container about-me">
+        <div class="about-me__text">
+          <p class="about-me__pre-title section-count">01</p>
+          <h2 class="about-me__title">About me</h2>
         </div>
+        <p class="about-me__desc">
+          I’ve been learning frontend for about two years, and I enjoy every
+          part of it: responsive layouts, animations and interactivity,
+          JavaScript logic and making interfaces comfortable to use. I’m looking
+          for a job or internship and freelance projects — and this site is also
+          my personal portfolio.
+        </p>
+        <ul class="about-me__skills">
+          <li class="about-me__skill">
+            <div class="about-me__skill-card">
+              <p>2 years</p>
+              <p>learning frontend</p>
+            </div>
+          </li>
+          <li class="about-me__skill">
+            <div class="about-me__skill-card">
+              <p>Mobile First</p>
+              <p>approach</p>
+            </div>
+          </li>
+          <li class="about-me__skill">
+            <div class="about-me__skill-card">
+              <p>Open to work</p>
+              <p>intership & freelance</p>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="projects">
         <div class="container">
@@ -188,7 +182,7 @@
               </div>
             </li>
           </ul>
-          <button class="projects__button">View all projects ➜</button>
+          <a href="#" class="projects__link">View all projects ➜</a>
         </div>
       </section>
       <section class="skills">
@@ -198,40 +192,42 @@
             <h2 class="skills__title">Skills</h2>
           </div>
           <ul class="skills__list">
-            <li class="skills__item skill-js">
-                <p class="skill__name">JavaScript</p>
+            <li class="skills__item skill skill--js">
+              <p class="skill__name">JavaScript</p>
+            </li>
+            <li class="skills__item skill skill--html-css">
+              <p class="skill__name">HTML / CSS</p>
+            </li>
+            <li class="skills__item skill skill--react skill--muted">
+              <p class="skill__name">React — coming soon</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="contacts">
-        <div class="container">
-          <div class="contacts__text">
-            <p class="contacts__pre-title section-count">04</p>
-            <p class="contacts__title">Contacts</p>
-          </div>
-          <p class="contacts__subtitle">
-            Have an idea or an offer? Write to me — I’ll reply as soon as I can.
-          </p>
-          <ul class="contacts__list">
-            <li class="contacts__item contact--telegram">
-              <div class="contact__card">
-                <div class="contact__info">
-                  <p class="contact__name">Telegram</p>
-                  <p class="contact__value">@username</p>
-                </div>
-                <a href="#" class="contact__link">↗</a>
-              </div>
-            </li>
-          </ul>
+      <section class="container contacts">
+        <div class="contacts__text">
+          <p class="contacts__pre-title section-count">04</p>
+          <p class="contacts__title">Contacts</p>
         </div>
+        <p class="contacts__subtitle">
+          Have an idea or an offer? Write to me — I’ll reply as soon as I can.
+        </p>
+        <ul class="contacts__list">
+          <li class="contacts__item contact--telegram">
+            <div class="contact__card">
+              <div class="contact__info">
+                <p class="contact__name">Telegram</p>
+                <p class="contact__value">@username</p>
+              </div>
+              <a href="#" class="contact__link">↗</a>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <p class="footer__copyright">© 2026 Matvej Povroznyk</p>
-        <a href="" class="footer__back-to-top">Back To Top ↑</a>
-      </div>
+    <footer class="container footer">
+      <p class="footer__copyright">© 2026 Matvej Povroznyk</p>
+      <a href="" class="footer__back-to-top">Back To Top ↑</a>
     </footer>
     <script src="./js/script.js"></script>
   </body>

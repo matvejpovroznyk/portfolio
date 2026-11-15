@@ -1,4 +1,8 @@
 .contacts {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
   &__title {
     font-weight: 600;
     font-size: 24px;
@@ -10,9 +14,20 @@
     line-height: 1.625;
     color: $color-muted;
   }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 .contact {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
   &__name {
     font-weight: 500;
     font-size: 12px;
@@ -28,5 +43,16 @@
   &__link {
     font-size: 18px;
     color: $color-accent;
+  }
+
+  &__card {
+    padding: 16px 20px;
+    background: #12151a;
+    border: 1px solid $color-border;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
