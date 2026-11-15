@@ -2,6 +2,7 @@
   &__title {
     font-weight: 600;
     font-size: 24px;
+    color: $color-text;
   }
 
   &__button {
@@ -15,6 +16,7 @@
   &__title {
     font-weight: 700;
     font-size: 18px;
+    color: $color-text;
   }
 
   &__desc {
@@ -30,5 +32,6 @@
 
   &__button {
     font-weight: 600;
+    color: $color-text;
   }
 }
